@@ -1,0 +1,35 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/php
+{
+	"name": "PHP",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/php:0-8.2",
+
+	"updateContentCommand": "composer install",
+		
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "cp .env.example .env && php artisan key:generate",
+
+	"postAttachCommand": {
+		"server": "php artisan serve --host 0.0.0.0"
+	},
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	"portsAttributes": {
+		"8000": {
+		  "label": "Laravel App",
+		  "onAutoForward": "openPreview"
+		}
+	  },
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [8000]
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
