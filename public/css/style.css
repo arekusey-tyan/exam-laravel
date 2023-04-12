@@ -1,0 +1,61 @@
+header, main, footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+main {
+    min-height: 75vh;
+}
+
+a, a:active {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, .nav-btn:hover {
+    color: whitesmoke;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+tr:not(:nth-child(1)) {
+    cursor: pointer;
+}
+tr, th, td {
+    text-align: center;
+}
+tr:nth-child(odd){
+    background: lightgrey;
+}
+
+iframe {
+    max-height: 400px;
+    text-decoration: none;
+    border: 1px solid black;
+    font-size: xx-large !important;
+}
+
+.row, .form-group {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.fas {
+    font-size: large;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.icon {
+    font-size: xx-large;
+}
+
+.nav-btn, .sub {
+    border: none;
+    background: none;
+}
