@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +35,7 @@
                         <button class="nav-btn" type="submit"><i class="fas fa-sign-out-alt icon"></i></button>
                     </form>
                 @else
-                    <a href="{{ asset('user/login') }}"><h4>Вход</h4></a> 
+                    <a href="{{ asset('user/login') }}"><h4>Вход</h4></a>
                     <a href="{{ asset('user/create') }}"><h4>Регистрация</h4></a>
                 @endif
             </div>
@@ -47,7 +47,7 @@
     <footer class="container bg-primary">
         <div class="row">
             <div class="text-center">
-                <h5>Автор: ProRock. 2021</h5>
+                <h5>Автор: Алексей Черников. 2023</h5>
             </div>
         </div>
     </footer>
